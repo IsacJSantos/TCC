@@ -3,6 +3,16 @@ using UnityEngine;
 public class CubeEntity : MonoBehaviour, IEntity
 {
     public Transform getEntityTransform => this.transform;
+    public Transform raycastPoint;
+    public bool defeat;
+    private void LateUpdate()
+    {
+        if (!defeat && !Physics.Raycast(raycastPoint.position, Vector3.down, 10))
+        {
+            defeat = true;
+            VictoryAndDefeatCanvas.defeatAction?.Invoke();
+        }
+    }
 
     public void Move(int steps)
     {
