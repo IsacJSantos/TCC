@@ -9,7 +9,7 @@ public class CommandBelt : MonoBehaviour
     private CubeEntity cubeEntity;
 
     [SerializeField]
-    private BaseCommandBlock[] baseCommandBlocks;
+    private List<BaseCommandBlock> baseCommandBlocks;
     private int currentBlockIndex;
 
     public bool executeBlocks;
@@ -29,6 +29,17 @@ public class CommandBelt : MonoBehaviour
         ExecuteBlock(baseCommandBlocks[currentBlockIndex]);
     }
 
+    public void AddCommandToBelt(BaseCommandBlock commandBlock) 
+    {
+        baseCommandBlocks.Add(commandBlock);
+    }
+
+    public void RemoveCommandFromBelt(BaseCommandBlock commandBlock) 
+    {
+        if (baseCommandBlocks.Contains(commandBlock))
+            baseCommandBlocks.Remove(commandBlock);
+    }
+
     private void ExecuteBlock(BaseCommandBlock baseCommandBlock)
     {
         print(currentBlockIndex);
@@ -38,7 +49,7 @@ public class CommandBelt : MonoBehaviour
     private void OnFinish()
     {
         currentBlockIndex++;
-        if (currentBlockIndex < baseCommandBlocks.Length)
+        if (currentBlockIndex < baseCommandBlocks.Count)
             ExecuteBlock(baseCommandBlocks[currentBlockIndex]);
     }
 }
