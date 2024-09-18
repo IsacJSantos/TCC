@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 5330823841054483964}
   - component: {fileID: 5015936575158840626}
   - component: {fileID: 7499976502778495730}
-  - component: {fileID: 3658070663654045434}
+  - component: {fileID: 283530329961809652}
   m_Layer: 5
   m_Name: TurnRightCommandEntry
   m_TagString: Untagged
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a69cc2d2a6221a41ba91beb495da716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  command: {fileID: 3658070663654045434}
+  command: {fileID: 283530329961809652}
 --- !u!114 &7499976502778495730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +282,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3658070663654045434
+--- !u!114 &283530329961809652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,6 +291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4677141753371393888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de57d168ecee6d34c906dedd01f9203c, type: 3}
+  m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnDegrees: 90

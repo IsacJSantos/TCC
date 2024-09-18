@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TurnRightCommandBlock : BaseCommandBlock
+public class TurnCommandBlock : BaseCommandBlock
 {
+    [SerializeField]
+    private float turnDegrees;
     protected override void OnExecute()
     {
         TurnEntity();
@@ -11,7 +11,7 @@ public class TurnRightCommandBlock : BaseCommandBlock
 
     private async void TurnEntity()
     {
-        currentEntity.Turn(90);
+        currentEntity.Turn(turnDegrees);
         await System.Threading.Tasks.Task.Delay(1000);
         Finish();
     }
