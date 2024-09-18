@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2718848790428267086}
   - component: {fileID: 6894306459172180130}
   - component: {fileID: 1203499063615752223}
-  - component: {fileID: 3041513083225772908}
   - component: {fileID: 3358312976174479555}
+  - component: {fileID: 48720170724028998}
   m_Layer: 5
   m_Name: TurnLeftCommandEntry
   m_TagString: Untagged
@@ -91,19 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a69cc2d2a6221a41ba91beb495da716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  command: {fileID: 3041513083225772908}
---- !u!114 &3041513083225772908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5012833708676366127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd9cbecb4a29134faf336ad39544feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  command: {fileID: 48720170724028998}
 --- !u!114 &3358312976174479555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +148,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &48720170724028998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5012833708676366127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnDegrees: -90
 --- !u!1 &6079476720379714745
 GameObject:
   m_ObjectHideFlags: 0
