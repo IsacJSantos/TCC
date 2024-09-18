@@ -10,7 +10,6 @@ public class CubeEntity : MonoBehaviour, IEntity
         if (!defeat && !Physics.Raycast(raycastPoint.position, Vector3.down, 10))
         {
             defeat = true;
-            VictoryAndDefeatCanvas.defeatAction?.Invoke();
         }
     }
 
