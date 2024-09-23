@@ -13,6 +13,8 @@ public class CommandBeltCanvas : MonoBehaviour
     private CommandEntry turnLeftCommandEntryPrefab;
     [SerializeField]
     private CommandEntry turnRightCommandEntryPrefab;
+    [SerializeField]
+    private CommandEntry ifStatementCommandEntryPrefab;
 
     public void RemoveCommandFromBelt(BaseCommandBlock baseCommandBlock) 
     {
@@ -41,6 +43,13 @@ public class CommandBeltCanvas : MonoBehaviour
     public void OnClick_AddTurnLeftCommand()
     {
         CommandEntry commandEntry = Instantiate(turnLeftCommandEntryPrefab, commandBeltContainer);
+        commandEntry.Init(this);
+        commandBelt.AddCommandToBelt(commandEntry.command);
+    }
+
+    public void OnClick_AddIfStatementCommand()
+    {
+        CommandEntry commandEntry = Instantiate(ifStatementCommandEntryPrefab, commandBeltContainer);
         commandEntry.Init(this);
         commandBelt.AddCommandToBelt(commandEntry.command);
     }

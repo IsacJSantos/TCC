@@ -4,6 +4,8 @@ using UnityEngine;
 public abstract class BaseCommandBlock : MonoBehaviour
 {
     protected IEntity currentEntity;
+    [SerializeField]
+    protected CommandBlockType blockType;
 
     private Action finishCallback;
     public void Execute(Action finishCallback, IEntity entity)
