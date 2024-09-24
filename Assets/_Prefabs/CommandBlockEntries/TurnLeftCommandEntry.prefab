@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 1
   turnDegrees: -90
 --- !u!1 &6079476720379714745
 GameObject:

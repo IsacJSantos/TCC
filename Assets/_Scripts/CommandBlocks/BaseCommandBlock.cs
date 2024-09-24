@@ -6,6 +6,7 @@ public abstract class BaseCommandBlock : MonoBehaviour
     protected IEntity currentEntity;
     [SerializeField]
     protected CommandBlockType blockType;
+    public CommandBlockType getBlockType { get => blockType; }
 
     private Action finishCallback;
     public void Execute(Action finishCallback, IEntity entity)

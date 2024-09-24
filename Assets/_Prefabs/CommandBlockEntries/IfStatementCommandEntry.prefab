@@ -92,7 +92,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 0
   turnDegrees: 90
 --- !u!1 &4677141753371393888
 GameObject:
@@ -347,6 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62ace50f176a3dd4fa144261e5948e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 3
   commandBlocksList:
   - {fileID: 217444575706392191}
   - {fileID: 6646193373537980820}
@@ -401,6 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 0
   turnDegrees: 90
 --- !u!1 &5525902499171801295
 GameObject:
@@ -450,6 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 0
   turnDegrees: 90
 --- !u!1 &5640991303204081517
 GameObject:
@@ -499,4 +503,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d185744786344244ba5698a734f40da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockType: 0
   turnDegrees: 90

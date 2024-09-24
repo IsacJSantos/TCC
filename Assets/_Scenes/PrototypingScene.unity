@@ -462,11 +462,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517310456}
         m_TargetAssemblyTypeName: CommandBeltCanvas, Assembly-CSharp
-        m_MethodName: OnClick_AddIfStatementCommand
-        m_Mode: 1
+        m_MethodName: OnClick_AddCommand
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5015936575158840626, guid: 398719452b29c224a8dea5342b0af230, type: 3}
+          m_ObjectArgumentAssemblyTypeName: CommandEntry, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -898,10 +898,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commandBelt: {fileID: 2083195097}
   commandBeltContainer: {fileID: 971196439}
-  moveCommandEntryPrefab: {fileID: 7023309250667518109, guid: 952f71759c5512748a1482cff8986131, type: 3}
-  turnLeftCommandEntryPrefab: {fileID: 1203499063615752223, guid: 5764ca7fa7fd1f843bb2fdf012ca5199, type: 3}
-  turnRightCommandEntryPrefab: {fileID: 5015936575158840626, guid: 0f68490240c5ec64993b18e2cfae804e, type: 3}
-  ifStatementCommandEntryPrefab: {fileID: 5015936575158840626, guid: 398719452b29c224a8dea5342b0af230, type: 3}
 --- !u!1 &591596793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,11 +1873,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517310456}
         m_TargetAssemblyTypeName: CommandBeltCanvas, Assembly-CSharp
-        m_MethodName: OnClick_AddTurnLeftCommand
-        m_Mode: 1
+        m_MethodName: OnClick_AddCommand
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1203499063615752223, guid: 5764ca7fa7fd1f843bb2fdf012ca5199, type: 3}
+          m_ObjectArgumentAssemblyTypeName: CommandEntry, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2805,11 +2801,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517310456}
         m_TargetAssemblyTypeName: CommandBeltCanvas, Assembly-CSharp
-        m_MethodName: OnClick_AddMoveCommand
-        m_Mode: 1
+        m_MethodName: OnClick_AddCommand
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7023309250667518109, guid: 952f71759c5512748a1482cff8986131, type: 3}
+          m_ObjectArgumentAssemblyTypeName: CommandEntry, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3191,11 +3187,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517310456}
         m_TargetAssemblyTypeName: CommandBeltCanvas, Assembly-CSharp
-        m_MethodName: OnClick_AddTurnRightCommand
-        m_Mode: 1
+        m_MethodName: OnClick_AddCommand
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5015936575158840626, guid: 0f68490240c5ec64993b18e2cfae804e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: CommandEntry, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
