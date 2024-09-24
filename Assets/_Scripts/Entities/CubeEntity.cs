@@ -22,4 +22,9 @@ public class CubeEntity : MonoBehaviour, IEntity
     {
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + degrees, transform.localEulerAngles.z);
     }
+
+    public void Interact()
+    {
+        Debug.Log("TODO: Interact");
+    }
 }
