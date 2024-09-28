@@ -6,7 +6,7 @@ using UnityEngine;
 public class CommandBelt : MonoBehaviour
 {
     [SerializeField]
-    private CubeEntity cubeEntity;
+    private PlayerController playerController;
 
     [SerializeField]
     private List<BaseCommandBlock> commandBlocksList;
@@ -43,7 +43,7 @@ public class CommandBelt : MonoBehaviour
     private void ExecuteBlock(BaseCommandBlock baseCommandBlock)
     {
         print(currentBlockIndex);
-        baseCommandBlock.Execute(OnBlockFinished, cubeEntity.GetComponent<IEntity>());
+        baseCommandBlock.Execute(OnBlockFinished, playerController.GetComponent<IEntity>());
     }
 
     private void OnBlockFinished()

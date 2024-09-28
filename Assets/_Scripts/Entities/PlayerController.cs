@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour, IEntity
 {
@@ -6,16 +7,18 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void Interact()
     {
-        throw new System.NotImplementedException();
+
     }
 
     public void Move(int steps)
     {
-        throw new System.NotImplementedException();
+        Vector3 newPos = transform.position + (transform.forward * steps);       
+        transform.DOMove(newPos, 0.3f);
     }
 
     public void Turn(float degrees)
     {
-        throw new System.NotImplementedException();
+        Vector3 newRotation = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + degrees, transform.localEulerAngles.z);
+        transform.DORotate(newRotation, 0.3f);
     }
 }
