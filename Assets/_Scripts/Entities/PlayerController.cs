@@ -3,17 +3,11 @@ using DG.Tweening;
 
 public class PlayerController : MonoBehaviour, IEntity
 {
-    public Transform getEntityTransform => throw new System.NotImplementedException();
+    public Transform getEntityTransform => transform;
 
     public void Interact()
     {
 
-    }
-
-    public void Move(int steps)
-    {
-        Vector3 newPos = transform.position + (transform.forward * steps);       
-        transform.DOMove(newPos, 0.3f);
     }
 
     public void Turn(float degrees)
