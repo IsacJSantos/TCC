@@ -14,4 +14,6 @@ public interface IEntity
     public void Turn(float degrees);
 
     public void Interact();
+
+    public void OnFall();
 }
