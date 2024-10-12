@@ -24,7 +24,10 @@ public class CommandBelt : MonoBehaviour
     public void RemoveCommandFromBelt(BaseCommandBlock commandBlock)
     {
         if (commandBlocksList.Contains(commandBlock))
+        {
             commandBlocksList.Remove(commandBlock);
+            Destroy(commandBlock);
+        }
     }
 
     private void ExecuteBlock(BaseCommandBlock baseCommandBlock)
@@ -37,7 +40,7 @@ public class CommandBelt : MonoBehaviour
     {
         currentBlockIndex++;
 
-        if(EntityIsGrounded(playerController.GetComponent<IEntity>()) == false) 
+        if (EntityIsGrounded(playerController.GetComponent<IEntity>()) == false)
         {
             playerController.GetComponent<IEntity>().OnFall();
             return;
@@ -45,8 +48,19 @@ public class CommandBelt : MonoBehaviour
 
         if (currentBlockIndex < commandBlocksList.Count)
             ExecuteBlock(commandBlocksList[currentBlockIndex]);
+        else
+            CountTotalCommands();
     }
 
+    private void CountTotalCommands() 
+    {
+        int totalCommands = 0;
+        for (int i = 0; i < commandBlocksList.Count; i++)
+        {
+            totalCommands += commandBlocksList[i].CountCommands();
+        }
+        Debug.Log($"TOTAL COMMANDS: {totalCommands}");
+    }
     private bool EntityIsGrounded(IEntity entity)
     {
         return Physics.Raycast(entity.getEntityTransform.position, Vector3.down, 20, LayerMask.GetMask("Ground"));
