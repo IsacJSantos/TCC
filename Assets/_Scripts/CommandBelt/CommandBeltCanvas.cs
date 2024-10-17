@@ -3,7 +3,7 @@ using UnityEngine;
 public class CommandBeltCanvas : MonoBehaviour
 {
     [SerializeField]
-    private CommandBelt commandBelt;
+    private MainCommandBelt commandBelt;
     [SerializeField]
     private Transform commandBeltContainer;
 

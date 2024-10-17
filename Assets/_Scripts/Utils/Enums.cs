@@ -6,5 +6,6 @@ public enum CommandBlockType
     TurnRight,
     IfStatement,
     Interact,
-    Loop
+    Loop,
+    Method
 }

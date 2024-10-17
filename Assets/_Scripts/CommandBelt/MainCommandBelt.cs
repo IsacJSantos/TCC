@@ -1,13 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommandBelt : MonoBehaviour
+public class MainCommandBelt : Singleton<MainCommandBelt>
 {
     [SerializeField]
     private PlayerController playerController;
 
     [SerializeField]
     private List<BaseCommandBlock> commandBlocksList;
+
+    [SerializeField]
+    private MethodBelt methodBeltA;
+    public MethodBelt getMethodBeltA { get => methodBeltA; }
+
     private int currentBlockIndex;
 
     public void Init()
