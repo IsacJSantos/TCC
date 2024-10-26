@@ -5,15 +5,16 @@ public class CommandEntry : MonoBehaviour
 {
     public BaseCommandBlock command;
 
-    CommandBeltCanvas commandBeltCanvas;
-    public void Init(CommandBeltCanvas commandBeltCanvas)
+    CommandBelt commandBelt;
+    public void Init(CommandBelt commandBelt)
     {
-        this.commandBeltCanvas = commandBeltCanvas;
+        this.commandBelt = commandBelt;
+        command.Init(commandBelt, this);
     }
 
     public void OnClick_RemoveCommand()
     {
-        commandBeltCanvas.RemoveCommandFromBelt(command);
+        commandBelt.RemoveCommandFromBelt(command);
         Destroy(gameObject);
     }
 }
