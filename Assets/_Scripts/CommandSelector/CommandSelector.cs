@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class CommandSelector : MonoBehaviour
 {
-   public CommandEntry commandEntryPrefab;
+    public string CommandName;
+    public CommandEntry commandEntryPrefab;
 }

@@ -2,16 +2,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using TMPro;
 
 public class DragHandler : MonoBehaviour
 {
     [SerializeField]
     private RectTransform dragObjRect;
     [SerializeField]
+    private TextMeshProUGUI dragObjRectText;
+    [SerializeField]
     private GraphicRaycaster graphicRaycaster;
+    [SerializeField]
+    private CommandSelector currentSelector;
 
     public void OnBegingDrag(BaseEventData eventData)
     {
+        currentSelector = eventData.selectedObject.GetComponent<CommandSelector>();
+        dragObjRectText.text = currentSelector.CommandName;
         dragObjRect.gameObject.SetActive(true);
     }
 
@@ -33,7 +40,7 @@ public class DragHandler : MonoBehaviour
 
         if (beltContainer == null) return;
 
-        beltContainer.OnDropCommand(eventData.selectedObject.GetComponent<CommandSelector>());
-
+        beltContainer.OnDropCommand(currentSelector);
+        currentSelector = null;
     }
 }
