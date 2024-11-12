@@ -9,6 +9,7 @@ public interface IEntity
     {
         Vector3 newPos = getEntityTransform.position + (getEntityTransform.forward * steps);
         getEntityTransform.DOMove(newPos, 0.3f);
+        OnMove();
     }
 
     public void Turn(float degrees);
@@ -16,4 +17,6 @@ public interface IEntity
     public void Interact();
 
     public void OnFall();
+
+    protected  void OnMove();
 }

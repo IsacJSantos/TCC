@@ -6,9 +6,13 @@ public class InteractCommandBlock : BaseCommandBlock
 {
     protected override void OnExecute()
     {
-        currentEntity.Interact();
-        Finish();
+        Interact();
     }
 
-   
+    private async void Interact()
+    {
+        currentEntity.Interact();
+        await System.Threading.Tasks.Task.Delay(1000);
+        Finish();
+    }
 }

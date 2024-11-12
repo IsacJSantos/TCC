@@ -1904,6 +1904,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 1530665176492829553, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 89.98021
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530665176492829553, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.0000140155835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530665176492829553, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536383295580345095, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.9175331
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536383295580345095, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.6675912
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536383295580345095, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 16.75565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904711862934869646, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.9697346
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904711862934869646, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.67089355
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904711862934869646, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -16.740002
+      objectReference: {fileID: 0}
     - target: {fileID: 4162370853951605194, guid: 984d3d3289b1cec4f93f996de25996b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
