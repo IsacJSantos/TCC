@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour, IEntity
     [SerializeField]
     private Animator animator;
     public Transform getEntityTransform => transform;
+
     public void Interact()
     {
         animator.SetTrigger("Interact");
@@ -27,5 +28,11 @@ public class PlayerController : MonoBehaviour, IEntity
         animator.SetTrigger("Fall");
     }
 
-   
+    public void TriggerInteractionPlatform()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 3, 1 << 6))
+        {
+            hit.collider.GetComponent<InteractionPlatform>().Interact();
+        }
+    }
 }
