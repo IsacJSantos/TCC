@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154863650127408773, guid: 4a28e97911701214a910f0de66cdc374, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5376448277081531282, guid: 4a28e97911701214a910f0de66cdc374, type: 3}
       propertyPath: m_Pivot.x
@@ -47,14 +47,6 @@ PrefabInstance:
     - target: {fileID: 5376448277081531282, guid: 4a28e97911701214a910f0de66cdc374, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376448277081531282, guid: 4a28e97911701214a910f0de66cdc374, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376448277081531282, guid: 4a28e97911701214a910f0de66cdc374, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 5376448277081531282, guid: 4a28e97911701214a910f0de66cdc374, type: 3}
       propertyPath: m_LocalPosition.x

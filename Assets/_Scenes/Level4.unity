@@ -2540,6 +2540,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3347289804070711857, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347289804070711857, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347289804070711857, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347289804070711857, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3730726652384932100, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2564,6 +2580,22 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1548125841}
+    - target: {fileID: 5514407674953071717, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514407674953071717, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514407674953071717, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514407674953071717, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6094178027416235318, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: m_IsActive
       value: 1
