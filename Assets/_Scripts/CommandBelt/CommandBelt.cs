@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CommandBelt : MonoBehaviour
@@ -10,11 +11,23 @@ public class CommandBelt : MonoBehaviour
     [SerializeField]
     private List<BaseCommandBlock> commandBlocksList;
     [SerializeField]
+    private TextMeshProUGUI blocksAmountText;
+    [SerializeField]
+    protected int maxBlocksAmount;
+    [SerializeField]
+    protected int blocksAmout;
+
+    [SerializeField]
     private LayerMask groundLayerMask;
 
     private Action finishCallback;
     private int currentBlockIndex;
 
+    private void Start()
+    {
+        blocksAmout = maxBlocksAmount;
+        UpdateBlocksAmountText();
+    }
     public void Init(Action finishCallback = null)
     {
         currentBlockIndex = 0;
@@ -24,7 +37,16 @@ public class CommandBelt : MonoBehaviour
 
     public void AddCommandToBelt(BaseCommandBlock commandBlock)
     {
-        commandBlocksList.Add(commandBlock);
+        if(commandBlocksList.Count < maxBlocksAmount) 
+        {
+            commandBlocksList.Add(commandBlock);
+            blocksAmout--;
+            UpdateBlocksAmountText();
+        }
+        else 
+        {
+            Destroy(commandBlock.gameObject);
+        }
     }
 
     public void RemoveCommandFromBelt(BaseCommandBlock commandBlock)
@@ -33,7 +55,14 @@ public class CommandBelt : MonoBehaviour
         {
             commandBlocksList.Remove(commandBlock);
             Destroy(commandBlock);
+            blocksAmout++;
+            UpdateBlocksAmountText();
         }
+    }
+
+    private void UpdateBlocksAmountText() 
+    {
+        blocksAmountText.text = blocksAmout.ToString();
     }
 
     private void ExecuteBlock(BaseCommandBlock baseCommandBlock)

@@ -3809,6 +3809,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4444056550231770413, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1548125841}
     - target: {fileID: 4926420829577791519, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: playerController
       value: 

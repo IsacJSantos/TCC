@@ -851,6 +851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   commandBlocksList: []
+  blocksAmountText: {fileID: 3864158796954104036}
+  maxBlocksAmount: 3
+  blocksAmout: 0
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 136
@@ -3155,6 +3158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   commandBlocksList: []
+  blocksAmountText: {fileID: 4203840822047540929}
+  maxBlocksAmount: 10
+  blocksAmout: 0
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 136
