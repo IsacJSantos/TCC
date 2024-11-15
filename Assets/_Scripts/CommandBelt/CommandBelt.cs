@@ -10,6 +10,7 @@ public class CommandBelt : MonoBehaviour
 
     [SerializeField]
     private List<BaseCommandBlock> commandBlocksList;
+    public List<BaseCommandBlock> getCommandBlocks { get => commandBlocksList; }
     [SerializeField]
     private TextMeshProUGUI blocksAmountText;
     [SerializeField]
@@ -35,21 +36,21 @@ public class CommandBelt : MonoBehaviour
         ExecuteBlock(commandBlocksList[currentBlockIndex]);
     }
 
-    public void AddCommandToBelt(BaseCommandBlock commandBlock)
+    public virtual void AddCommandToBelt(BaseCommandBlock commandBlock)
     {
-        if(commandBlocksList.Count < maxBlocksAmount) 
+        if (commandBlocksList.Count < maxBlocksAmount)
         {
             commandBlocksList.Add(commandBlock);
             blocksAmout--;
             UpdateBlocksAmountText();
         }
-        else 
+        else
         {
             Destroy(commandBlock.gameObject);
         }
     }
 
-    public void RemoveCommandFromBelt(BaseCommandBlock commandBlock)
+    public virtual void RemoveCommandFromBelt(BaseCommandBlock commandBlock)
     {
         if (commandBlocksList.Contains(commandBlock))
         {
@@ -60,7 +61,7 @@ public class CommandBelt : MonoBehaviour
         }
     }
 
-    private void UpdateBlocksAmountText() 
+    private void UpdateBlocksAmountText()
     {
         blocksAmountText.text = blocksAmout.ToString();
     }
@@ -83,13 +84,13 @@ public class CommandBelt : MonoBehaviour
 
         if (currentBlockIndex < commandBlocksList.Count)
             ExecuteBlock(commandBlocksList[currentBlockIndex]);
-        else 
+        else
         {
             OnAllBlocksFinished();
         }
     }
 
-    protected virtual void OnAllBlocksFinished() 
+    protected virtual void OnAllBlocksFinished()
     {
         finishCallback?.Invoke();
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3548867690216454890}
   - component: {fileID: 7173396523102139116}
   - component: {fileID: 1843442690386686382}
+  - component: {fileID: 18207012742109221}
   m_Layer: 5
   m_Name: BeltContent
   m_TagString: Untagged
@@ -107,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0678b72cb2c7d6a4b8adbfd6c5a5284e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandBelt: {fileID: 0}
+  commandBelt: {fileID: 18207012742109221}
 --- !u!222 &1843442690386686382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -116,6 +117,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55525430627879107}
   m_CullTransparentMesh: 1
+--- !u!114 &18207012742109221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55525430627879107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93412016aa17628408728b9ac2260c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  commandBlocksList: []
+  blocksAmountText: {fileID: 6390275897353841181}
+  maxBlocksAmount: 3
+  blocksAmout: 0
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 136
+  loopSetupWindow: {fileID: 0}
 --- !u!1 &746754384330020705
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +453,7 @@ RectTransform:
   m_GameObject: {fileID: 1599278367433085347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.46041667, y: 0.46041667, z: 0.46041667}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4636855617740703918}
@@ -875,15 +897,14 @@ GameObject:
   m_Component:
   - component: {fileID: 595018880461977738}
   - component: {fileID: 6148964236434717691}
-  - component: {fileID: 9112857484484704949}
-  - component: {fileID: 6505320039859185868}
+  - component: {fileID: 6162678199853992297}
   m_Layer: 5
   m_Name: LoopSetupMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &595018880461977738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -912,30 +933,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2545471814721949482}
   m_CullTransparentMesh: 1
---- !u!223 &9112857484484704949
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2545471814721949482}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!114 &6505320039859185868
+--- !u!114 &6162678199853992297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -944,14 +942,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2545471814721949482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Script: {fileID: 11500000, guid: d8ad52e876cb37b469af1ba5916703fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  maxRepetitions: 10
+  repetitionsText: {fileID: 3188698798937931938}
+  loopSetupCommandBelt: {fileID: 18207012742109221}
 --- !u!1 &2693741395655531977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,7 +1758,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5511440526254469645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6162678199853992297}
+        m_TargetAssemblyTypeName: LoopSetupWindow, Assembly-CSharp
+        m_MethodName: OnClick_AddRepetitions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4544139467748357106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,7 +2948,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.15
+  m_fontSize: 29.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3285,7 +3293,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5518438843348969564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6162678199853992297}
+        m_TargetAssemblyTypeName: LoopSetupWindow, Assembly-CSharp
+        m_MethodName: OnClick_RemoveRepetitions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6743884958731859003
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,8 @@ public class LoopCommandBlock : BaseCommandBlock
     [SerializeField]
     private int maxIterations;
     [SerializeField]
-    private List<BaseCommandBlock> commandBlocksList;
+    private List<BaseCommandBlock> commandBlocksList = new List<BaseCommandBlock>();
+    public List<BaseCommandBlock> getCommandBlockList { get => commandBlocksList; }
     private int currentBlockIndex;
     private int iterationCount;
     protected override void OnExecute()
@@ -44,7 +45,7 @@ public class LoopCommandBlock : BaseCommandBlock
         iterationCount++;
         if (iterationCount >= maxIterations)
             Finish();
-        else 
+        else
         {
             currentBlockIndex = 0;
             ExecuteBlock(commandBlocksList[0]);
