@@ -23,9 +23,11 @@ public class PlayerController : MonoBehaviour, IEntity
         animator.SetTrigger("Walk");
     }
 
-    public void OnFall()
+    public async void OnFall()
     {
         animator.SetTrigger("Fall");
+        await System.Threading.Tasks.Task.Delay(1000);
+        Events.Defeat?.Invoke();
     }
 
     public void TriggerInteractionPlatform()

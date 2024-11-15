@@ -5,10 +5,12 @@ using UnityEngine;
 public class CommandBelt : MonoBehaviour
 {
     [SerializeField]
-    private PlayerController playerController;
+    protected PlayerController playerController;
 
     [SerializeField]
     private List<BaseCommandBlock> commandBlocksList;
+    [SerializeField]
+    private LayerMask groundLayerMask;
 
     private Action finishCallback;
     private int currentBlockIndex;
@@ -54,8 +56,13 @@ public class CommandBelt : MonoBehaviour
             ExecuteBlock(commandBlocksList[currentBlockIndex]);
         else 
         {
-            finishCallback?.Invoke();
+            OnAllBlocksFinished();
         }
+    }
+
+    protected virtual void OnAllBlocksFinished() 
+    {
+        finishCallback?.Invoke();
     }
 
     public int CountTotalCommands()
@@ -69,6 +76,6 @@ public class CommandBelt : MonoBehaviour
     }
     private bool EntityIsGrounded(IEntity entity)
     {
-        return Physics.Raycast(entity.getEntityTransform.position, Vector3.down, 20, LayerMask.GetMask("Ground"));
+        return Physics.Raycast(entity.getEntityTransform.position, Vector3.down, 20, groundLayerMask);
     }
 }
