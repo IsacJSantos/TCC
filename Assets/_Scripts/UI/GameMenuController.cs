@@ -39,10 +39,12 @@ public class GameMenuController : MonoBehaviour
     public void OnClick_BackToMain()
     {
         LoadingManager.Instance.LoadScene("MainMenu");
+        Time.timeScale = 1;
     }
 
     public void OnClick_RestartGame()
     {
+        Time.timeScale = 1;
         LoadingManager.Instance.LoadScene("Level" + GameController.Instance.getCurrentSceneID);
     }
 

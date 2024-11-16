@@ -1886,41 +1886,17 @@ PrefabInstance:
       propertyPath: m_text
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: levelID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: selectorController
+      value: 
+      objectReference: {fileID: 6299623426412114887}
     - target: {fileID: 1043413184704015544, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Name
       value: LevelSelectorButtonEntry (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6299623426412114887}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick_SelectLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelectorController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4187432407007026040, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Pivot.x
@@ -2024,41 +2000,17 @@ PrefabInstance:
       propertyPath: m_text
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: levelID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: selectorController
+      value: 
+      objectReference: {fileID: 6299623426412114887}
     - target: {fileID: 1043413184704015544, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Name
       value: LevelSelectorButtonEntry (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6299623426412114887}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick_SelectLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelectorController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4187432407007026040, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Pivot.x
@@ -2264,41 +2216,17 @@ PrefabInstance:
       propertyPath: m_text
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: levelID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: selectorController
+      value: 
+      objectReference: {fileID: 6299623426412114887}
     - target: {fileID: 1043413184704015544, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Name
       value: LevelSelectorButtonEntry (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6299623426412114887}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick_SelectLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelectorController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4187432407007026040, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Pivot.x
@@ -2402,41 +2330,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: levelID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: selectorController
+      value: 
+      objectReference: {fileID: 6299623426412114887}
     - target: {fileID: 1043413184704015544, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Name
       value: LevelSelectorButtonEntry
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6299623426412114887}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick_SelectLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelectorController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4187432407007026040, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Pivot.x
@@ -2540,41 +2444,17 @@ PrefabInstance:
       propertyPath: m_text
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: levelID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: selectorController
+      value: 
+      objectReference: {fileID: 6299623426412114887}
     - target: {fileID: 1043413184704015544, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Name
       value: LevelSelectorButtonEntry (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6299623426412114887}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick_SelectLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelectorController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4187432407007026040, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Pivot.x
@@ -3282,41 +3162,17 @@ PrefabInstance:
       propertyPath: m_text
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: levelID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 798102021570809041, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
+      propertyPath: selectorController
+      value: 
+      objectReference: {fileID: 6299623426412114887}
     - target: {fileID: 1043413184704015544, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Name
       value: LevelSelectorButtonEntry (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6299623426412114887}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick_SelectLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelectorController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017980802680199911, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4187432407007026040, guid: c292101fcaf34aa4bb4a764471e1bffd, type: 3}
       propertyPath: m_Pivot.x

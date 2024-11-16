@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelSelectorController : MonoBehaviour
 {
-    public void OnClick_SelectLevel(int levelID)
+    public void SelectLevel(int levelID)
     {
         LoadingManager.Instance.LoadScene("Level" + levelID);
     }

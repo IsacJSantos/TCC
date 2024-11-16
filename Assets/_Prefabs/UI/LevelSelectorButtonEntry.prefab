@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4187432407007026040}
   - component: {fileID: 5596232447445086947}
+  - component: {fileID: 798102021570809041}
   - component: {fileID: 1856967069009971950}
   - component: {fileID: 3017980802680199911}
   m_Layer: 5
@@ -124,6 +125,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043413184704015544}
   m_CullTransparentMesh: 1
+--- !u!114 &798102021570809041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043413184704015544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34977b3e038d0e4bbe1676beca70311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectorController: {fileID: 0}
+  levelID: 0
+  button: {fileID: 3017980802680199911}
+  lockedGroup: {fileID: 119097021598776805}
 --- !u!114 &1856967069009971950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +214,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1856967069009971950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 798102021570809041}
+        m_TargetAssemblyTypeName: LevelSelectorButton, Assembly-CSharp
+        m_MethodName: OnClick_SelectLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1384696997447286027
 GameObject:
   m_ObjectHideFlags: 0
