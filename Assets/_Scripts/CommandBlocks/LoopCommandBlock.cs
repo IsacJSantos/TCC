@@ -50,4 +50,9 @@ public class LoopCommandBlock : BaseCommandBlock
         iteractions = Mathf.Clamp(iteractions - 1, 0, maxIteractions);
         iterationsText.text = iteractions.ToString();
     }
+
+    public void OnClick_RemoveBlock()
+    {
+        loopCommandBelt.RemoveAllFromBeltCommands();
+    }
 }

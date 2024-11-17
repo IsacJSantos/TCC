@@ -63,6 +63,15 @@ public class CommandBelt : MonoBehaviour
         }
     }
 
+    public virtual void RemoveAllFromBeltCommands()
+    {
+        for (int i = 0; i < commandBlocksList.Count; i++)
+        {
+            Destroy(commandBlocksList[i].gameObject);
+        }
+        commandBlocksList.Clear();
+    }
+
     private void UpdateBlocksAmountText()
     {
         if (blocksAmountText == null) return;

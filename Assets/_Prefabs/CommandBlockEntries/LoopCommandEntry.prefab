@@ -146,8 +146,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7502399978219338146}
   - component: {fileID: 1118477353269700263}
-  - component: {fileID: 9040657069500795921}
   - component: {fileID: 2005775653885026334}
+  - component: {fileID: 9040657069500795921}
   - component: {fileID: 1227245616421471567}
   m_Layer: 5
   m_Name: BentContent
@@ -201,6 +201,14 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!222 &2005775653885026334
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56951785820363877}
+  m_CullTransparentMesh: 1
 --- !u!114 &9040657069500795921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,14 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandBelt: {fileID: 5213795664904468792}
---- !u!222 &2005775653885026334
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56951785820363877}
-  m_CullTransparentMesh: 1
+  ignoredBlockTypes: 05000000
 --- !u!114 &1227245616421471567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,6 +771,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2499758542704542855}
+        m_TargetAssemblyTypeName: CommandEntry, Assembly-CSharp
+        m_MethodName: OnClick_RemoveCommand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2499758542704542855}
         m_TargetAssemblyTypeName: CommandEntry, Assembly-CSharp
         m_MethodName: OnClick_RemoveCommand
