@@ -36,7 +36,7 @@ public class DragHandler : MonoBehaviour
 
         if (raycastResults == null || raycastResults.Count == 0) return;
 
-        CommandBeltContainer beltContainer = raycastResults[0].gameObject.GetComponent<CommandBeltContainer>();
+        IBeltContainer beltContainer = raycastResults[0].gameObject.GetComponent<IBeltContainer>();
 
         if (beltContainer == null) return;
 

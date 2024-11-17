@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommandBeltContainer : MonoBehaviour
+public class CommandBeltContainer : MonoBehaviour, IBeltContainer
 {
     [SerializeField]
     private CommandBelt commandBelt;

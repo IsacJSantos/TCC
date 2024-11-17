@@ -6,7 +6,8 @@ using UnityEngine;
 public class CommandBelt : MonoBehaviour
 {
     [SerializeField]
-    protected PlayerController playerController;
+    protected IEntity currentEntity;
+    public IEntity getCurrentEntity { get => currentEntity; }
 
     [SerializeField]
     private List<BaseCommandBlock> commandBlocksList;
@@ -29,9 +30,10 @@ public class CommandBelt : MonoBehaviour
         blocksAmout = maxBlocksAmount;
         UpdateBlocksAmountText();
     }
-    public void Init(Action finishCallback = null)
+    public void Init(IEntity entity, Action finishCallback = null)
     {
         currentBlockIndex = 0;
+        currentEntity = entity;
         this.finishCallback = finishCallback;
         ExecuteBlock(commandBlocksList[currentBlockIndex]);
     }
@@ -63,22 +65,24 @@ public class CommandBelt : MonoBehaviour
 
     private void UpdateBlocksAmountText()
     {
+        if (blocksAmountText == null) return;
+
         blocksAmountText.text = blocksAmout.ToString();
     }
 
     private void ExecuteBlock(BaseCommandBlock baseCommandBlock)
     {
         print(currentBlockIndex);
-        baseCommandBlock.Execute(OnBlockFinished, playerController.GetComponent<IEntity>());
+        baseCommandBlock.Execute(OnBlockFinished, currentEntity);
     }
 
     private void OnBlockFinished()
     {
         currentBlockIndex++;
 
-        if (EntityIsGrounded(playerController.GetComponent<IEntity>()) == false)
+        if (EntityIsGrounded(currentEntity) == false)
         {
-            playerController.GetComponent<IEntity>().OnFall();
+            currentEntity.OnFall();
             return;
         }
 

@@ -32,7 +32,7 @@ public class MethodCommandBlock : BaseCommandBlock
 
     protected override void OnExecute()
     {
-        methodBelt.Init(OnMethodFinished);
+        methodBelt.Init(commandBelt.getCurrentEntity, OnMethodFinished);
     }
 
     private void OnMethodFinished()

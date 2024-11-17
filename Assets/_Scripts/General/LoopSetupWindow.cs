@@ -8,8 +8,6 @@ public class LoopSetupWindow : MonoBehaviour
     private int maxRepetitions = 10;
     [SerializeField]
     private TextMeshProUGUI repetitionsText;
-    [SerializeField]
-    private LoopSetupCommandBelt loopSetupCommandBelt;
 
     private LoopCommandBlock currentLoopCommandBlock;
     private int currentRepetitions;
@@ -22,11 +20,6 @@ public class LoopSetupWindow : MonoBehaviour
     private void SetView()
     {
         List<BaseCommandBlock> loopCommands = currentLoopCommandBlock.getCommandBlockList;
-        for (int i = 0; i < loopCommands.Count; i++)
-        {
-            loopSetupCommandBelt.AddCommandToBelt(loopCommands[i]);
-            loopCommands[i].gameObject.SetActive(true);
-        }
     }
 
     public void AddCommandBlock()

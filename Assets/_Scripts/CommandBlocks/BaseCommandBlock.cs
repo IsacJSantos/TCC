@@ -13,7 +13,7 @@ public abstract class BaseCommandBlock : MonoBehaviour
     private bool counted;
     public bool getCounted { get => counted; }
 
-    private CommandBelt commandBelt;
+    protected CommandBelt commandBelt;
     private CommandEntry commandEntry;
 
     public virtual void Init(CommandBelt commandBelt, CommandEntry commandEntry) 

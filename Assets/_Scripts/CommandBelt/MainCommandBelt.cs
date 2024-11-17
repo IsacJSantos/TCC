@@ -19,6 +19,6 @@ public class MainCommandBelt : CommandBelt
 
     private bool IsOnFinalBlock()
     {
-        return Physics.Raycast(playerController.getEntityTransform.position, Vector3.down, 20, LayerMask.GetMask("VictoryGround"));
+        return Physics.Raycast(currentEntity.getEntityTransform.position, Vector3.down, 20, LayerMask.GetMask("VictoryGround"));
     }
 }
