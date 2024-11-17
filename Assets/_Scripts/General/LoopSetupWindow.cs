@@ -19,7 +19,7 @@ public class LoopSetupWindow : MonoBehaviour
 
     private void SetView()
     {
-        List<BaseCommandBlock> loopCommands = currentLoopCommandBlock.getCommandBlockList;
+       
     }
 
     public void AddCommandBlock()

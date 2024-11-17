@@ -1,68 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LoopCommandBlock : BaseCommandBlock
 {
+    public int maxIteractions;
+    public int iteractions;
     [SerializeField]
-    private int maxIterations;
+    private TextMeshProUGUI iterationsText;
     [SerializeField]
-    private List<BaseCommandBlock> commandBlocksList = new List<BaseCommandBlock>();
-    public List<BaseCommandBlock> getCommandBlockList { get => commandBlocksList; }
-    private int currentBlockIndex;
+    private CommandBelt loopCommandBelt;
     private int iterationCount;
+
+    public override void Init(CommandBelt commandBelt, CommandEntry commandEntry)
+    {
+        base.Init(commandBelt, commandEntry);
+        iterationsText.text = iteractions.ToString();
+    }
     protected override void OnExecute()
     {
-        ExecuteBlock(commandBlocksList[0]);
+        loopCommandBelt.Init(commandBelt.getCurrentEntity, OnAllBlocksFinished);
     }
 
     public override int CountCommands()
     {
         int count = base.CountCommands();
-        for (int i = 0; i < commandBlocksList.Count; i++)
-        {
-            count += commandBlocksList[i].CountCommands();
-        }
+        count += loopCommandBelt.CountTotalCommands();
         return count;
-    }
-
-    private void ExecuteBlock(BaseCommandBlock commandBlock)
-    {
-        commandBlock.Execute(OnBlockFinished, currentEntity);
-    }
-
-    private void OnBlockFinished()
-    {
-        currentBlockIndex++;
-        if (currentBlockIndex < commandBlocksList.Count)
-            ExecuteBlock(commandBlocksList[currentBlockIndex]);
-        else
-            OnAllBlocksFinished();
     }
 
     private void OnAllBlocksFinished()
     {
         iterationCount++;
-        if (iterationCount >= maxIterations)
+        if (iterationCount >= iteractions)
             Finish();
         else
         {
-            currentBlockIndex = 0;
-            ExecuteBlock(commandBlocksList[0]);
+            loopCommandBelt.Init(commandBelt.getCurrentEntity, OnAllBlocksFinished);
         }
     }
 
-    public void AddCommand(BaseCommandBlock commandBlock)
+    public void OnClick_IncreaseIterations()
     {
-        commandBlocksList.Add(commandBlock);
+        iteractions = Mathf.Clamp(iteractions + 1, 0, maxIteractions);
+        iterationsText.text = iteractions.ToString();
     }
 
-    public void RemoveCommand(BaseCommandBlock commandBlock)
+    public void OnClick_DecreaseIterations()
     {
-        if (commandBlocksList.Contains(commandBlock))
-        {
-            commandBlocksList.Remove(commandBlock);
-            Destroy(commandBlock);
-        }
+        iteractions = Mathf.Clamp(iteractions - 1, 0, maxIteractions);
+        iterationsText.text = iteractions.ToString();
     }
 }
