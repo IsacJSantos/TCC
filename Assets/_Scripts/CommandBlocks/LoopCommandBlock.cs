@@ -18,6 +18,7 @@ public class LoopCommandBlock : BaseCommandBlock
     }
     protected override void OnExecute()
     {
+        iterationCount = 0;
         loopCommandBelt.Init(commandBelt.getCurrentEntity, OnAllBlocksFinished);
     }
 

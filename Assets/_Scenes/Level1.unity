@@ -2466,6 +2466,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71493289945154700, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.60310775
+      objectReference: {fileID: 0}
+    - target: {fileID: 71493289945154700, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 226
+      objectReference: {fileID: 0}
+    - target: {fileID: 71493289945154700, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -113
+      objectReference: {fileID: 0}
     - target: {fileID: 358954083274146461, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2578,6 +2590,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -71.73483
       objectReference: {fileID: 0}
+    - target: {fileID: 1359045858076867672, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1599278367433085347, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: m_Name
       value: BeltCanvas
@@ -2620,12 +2636,32 @@ PrefabInstance:
       objectReference: {fileID: 1548125841}
     - target: {fileID: 4926420829577791519, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: maxBlocksAmount
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4926420829577791519, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1548125841}
+    - target: {fileID: 5838025387750897878, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838025387750897878, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838025387750897878, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838025387750897878, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838025387750897878, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6094178027416235318, guid: 7d9874cf41b8a05408fd19eb3bcaa0a1, type: 3}
       propertyPath: m_IsActive
       value: 0
